@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini Analytics SDK Demo</title>
+</head>
+<body>
+  <h1>Game Demo</h1>
+  <button onclick="AnalyticsSDK.logEvent('level_complete', { level: 2, time: 55 })">
+    Complete Level 2
+  </button>
+  <button onclick="AnalyticsSDK.logEvent('purchase', { item: 'sword', cost: 100 })">
+    Buy Sword
+  </button>
+
+  <script src="../src/analytics.js"></script>
+  <script>
+    AnalyticsSDK.init("user_123");
+  </script>
+</body>
+</html>
+
